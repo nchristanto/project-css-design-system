@@ -17,13 +17,12 @@
 .jumbotron {
   display: flex;
   flex-direction: row;
+  background-color: #49d192;
 }
 
 .jumbotron-text {
   padding-left: 80px;
   padding-right: 50px;
-  /* background-image: url("/images/banner-horizontal.jpg"); */
-  /* background-size: 750px; */
 }
 
 .card-group {
