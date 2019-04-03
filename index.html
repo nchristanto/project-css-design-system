@@ -15,6 +15,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="/index.css" />
 
     <title>clone-Jakarta-MRT-website-using-Bootstrap</title>
   </head>
@@ -65,195 +66,164 @@
     </nav>
     <header>
       <div class="jumbotron">
-        <form>
-          <div class="form-group">
-            <input
-              type="text"
-              class="form-control"
-              id="exampleFormControlInput1"
-              placeholder="From"
-            />
+        <!-- Material form contact -->
+        <div class="card">
+          <h5 class="card-header info-color white-text text-center py-4">
+            <strong>Hitung Tarif MRT</strong>
+          </h5>
+
+          <!--Card content-->
+          <div class="card-box-container">
+            <!-- Form -->
+            <br></br>
+            <form class="text-center" style="color: #757575;">
+              <!-- Stasiun asal -->
+              <!-- <span>Dari</span> -->
+              <select class="mdb-select">
+                <option value="" selected>Pilih stasiun asal</option>
+                <option value="1">Lebak Bulus</option>
+                <option value="2">Fatmawati</option>
+                <option value="3">Cipete Raya</option>
+                <option value="4">Haji Nawi</option>
+                <option value="5">Blok A</option>
+                <option value="6">Block M</option>
+                <option value="7">ASEAN</option>
+                <option value="8">Senayan</option>
+                <option value="9">Istora</option>
+                <option value="10">Bendungan Hilir</option>
+                <option value="11">Setiabudi</option>
+                <option value="12">Dukuh Atas</option>
+                <option value="13">Bundaran Hotel Indonesia</option>
+              </select>
+
+              <!--Message-->
+              <div class="md-form">
+                <!-- <span>Ke </span> -->
+                <select class="mdb-select">
+                  <option value="" selected>Pilih stasiun tujuan</option>
+                  <option value="1">Bundaran Hotel Indonesia</option>
+                  <option value="2">Dukuh Atas</option>
+                  <option value="3">Setiabudi</option>
+                  <option value="4">Bendungan Hilir</option>
+                  <option value="5">Istora</option>
+                  <option value="6">Senayan</option>
+                  <option value="7">ASEAN</option>
+                  <option value="8">Block M</option>
+                  <option value="9">Blok A</option>
+                  <option value="10">Haji Nawi</option>
+                  <option value="11">Cipete Raya</option>
+                  <option value="12">Fatmawati</option>
+                  <option value="13">Lebak Bulus</option>
+                </select>
+              </div>
+
+              <!-- Send button -->
+              <br></br>
+              <button class="btn-card-box" type="submit">
+                Simulasikan harga
+              </button>
+              <br></br>
+            </form>
+            <!-- Form -->
           </div>
-          <div class="form-group">
-            <label for="exampleFormControlSelect1">Example select</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlSelect2"
-              >Example multiple select</label
-            >
-            <select
-              multiple
-              class="form-control"
-              id="exampleFormControlSelect2"
-            >
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1">Example textarea</label>
-            <textarea
-              class="form-control"
-              id="exampleFormControlTextarea1"
-              rows="3"
-            ></textarea>
-          </div>
-        </form>
-        <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">
-          This is a simple hero unit, a simple jumbotron-style component for
-          calling extra attention to featured content or information.
-        </p>
-        <hr class="my-4" />
-        <p>
-          It uses utility classes for typography and spacing to space content
-          out within the larger container.
-        </p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+          
+        </div>
+
+        <div class="jumbotron-text">
+          <h1 class="display-4">Hello, world!</h1>
+            <p class="lead">
+              This is a simple hero unit, a simple jumbotron-style component for
+              calling extra attention to featured content or information.
+            </p>
+          <hr class="my-4" />
+            <p>
+              It uses utility classes for typography and spacing to space content
+              out within the larger container.
+            </p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+          </hr>
+        </div>
       </div>
     </header>
 
     <!-- Main -->
-    <div class="card-columns">
+    <div class="card-group">
       <div class="card">
-        <img src="..." class="card-img-top" alt="..." />
+        <img src="/images/setengah-harga.jpeg" class="card-img-top" alt="..." />
         <div class="card-body">
-          <h5 class="card-title">Card title that wraps to a new line</h5>
+          <h5 class="card-title">Selama April 2019, Tarif MRT Jakarta Dipotong 50%</h5>
           <p class="card-text">
-            This is a longer card with supporting text below as a natural
-            lead-in to additional content. This content is a little bit longer.
+            Selama April 2019, Tarif MRT Jakarta Dipotong 50%
           </p>
         </div>
-      </div>
-      <div class="card p-3">
-        <blockquote class="blockquote mb-0 card-body">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            posuere erat a ante.
-          </p>
-          <footer class="blockquote-footer">
-            <small class="text-muted">
-              Someone famous in <cite title="Source Title">Source Title</cite>
-            </small>
-          </footer>
-        </blockquote>
-      </div>
-      <div class="card">
-        <img src="..." class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            This card has supporting text below as a natural lead-in to
-            additional content.
-          </p>
-          <p class="card-text">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </p>
-        </div>
-      </div>
-      <div class="card bg-primary text-white text-center p-3">
-        <blockquote class="blockquote mb-0">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            posuere erat.
-          </p>
-          <footer class="blockquote-footer text-white">
-            <small>
-              Someone famous in <cite title="Source Title">Source Title</cite>
-            </small>
-          </footer>
-        </blockquote>
-      </div>
-      <div class="card text-center">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            This card has a regular title and short paragraphy of text below it.
-          </p>
-          <p class="card-text">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </p>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 10 mins ago</small>
         </div>
       </div>
       <div class="card">
-        <img src="..." class="card-img-top" alt="..." />
-      </div>
-      <div class="card p-3 text-right">
-        <blockquote class="blockquote mb-0">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            posuere erat a ante.
+        <img src="images/setengah-harga.jpeg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Area Parkir Lebak Bulus Tampung 157 Mobil dan 500 Motor</h5>
+          <p class="card-text">
+            Area Parkir Lebak Bulus Tampung 157 Mobil dan 500 Motor
           </p>
-          <footer class="blockquote-footer">
-            <small class="text-muted">
-              Someone famous in <cite title="Source Title">Source Title</cite>
-            </small>
-          </footer>
-        </blockquote>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 50 mins ago</small>
+        </div>
       </div>
       <div class="card">
+        <img src="images/beroperasi-hari-ini.jpeg" class="card-img-top" alt="..." />
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
+          <h5 class="card-title">MRT resmi beroperasi hari ini</h5>
           <p class="card-text">
-            This is another card with title and supporting text below. This card
-            has some additional content to make it slightly taller overall.
+            MRT resmi beroperasi hari ini
           </p>
-          <p class="card-text">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 1 week ago</small>
         </div>
       </div>
     </div>
 
-    <!-- card deck -->
+        <!-- Main -->
     <div class="card-group">
       <div class="card">
-        <img src="..." class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">Last updated 3 mins ago</small>
-        </div>
-      </div>
-      <div class="card">
-        <img src="..." class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            This card has supporting text below as a natural lead-in to
-            additional content.
-          </p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">Last updated 3 mins ago</small>
-        </div>
-      </div>
-      <div class="card">
-        <img src="..." class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This card has even longer content than the
-            first to show that equal height action.
-          </p>
-        </div>
-        <div class="card-footer">
+        <img src="images/kartu-dilarang.jpeg" class="card-img-top" alt="..." />
+          <div class="card-body">
+             <h5 class="card-title">Informasi Peta Jalur MRT</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural lead-in
+                to additional content. This content is a little bit longer.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/beroperasi-hari-ini.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Area Parkir Lebak Bulus Tampung 157 Mobil dan 500 Motor</h5>
+              <p class="card-text">
+                Area Parkir Lebak Bulus Tampung 157 Mobil dan 500 Motor
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/kartu-dilarang.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural lead-in
+                to additional content. This card has even longer content than the
+                first to show that equal height action.
+              </p>
+            </div>
+            <div class="card-footer">
           <small class="text-muted">Last updated 3 mins ago</small>
         </div>
       </div>
@@ -270,11 +240,9 @@
           <div class="col-md-6">
             <!-- Video -->
             <div class="embed-responsive embed-responsive-16by9 mb-4">
-              <iframe
-                class="embed-responsive-item"
-                src="https://www.youtube.com/embed/vlDzYIIOYmM"
-                allowfullscreen
-              ></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/uF8h4mcX1lo" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              </iframe>
             </div>
           </div>
           <!--Grid column-->
@@ -305,7 +273,7 @@
             <div
               class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0"
             >
-              <h6 class="mb-0">Get connected with us on social networks!</h6>
+              <h6 class="mb-0"></h6>
             </div>
             <!-- Grid column -->
 
@@ -345,14 +313,15 @@
           <!-- Grid column -->
           <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
             <!-- Content -->
-            <h6 class="text-uppercase font-weight-bold">Company name</h6>
+            <h6 class="text-uppercase font-weight-bold">PT MRT Jakarta</h6>
             <hr
               class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto"
               style="width: 60px;"
             />
             <p>
-              Here you can use rows and columns here to organize your footer
-              content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Wisma Nusantara Lt. 21<br>
+              Jln MH Thamrin 59<br>
+              Jakarta, Indonesia
             </p>
           </div>
           <!-- Grid column -->
@@ -360,22 +329,22 @@
           <!-- Grid column -->
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
-            <h6 class="text-uppercase font-weight-bold">Products</h6>
+            <h6 class="text-uppercase font-weight-bold">MRT Jakarta</h6>
             <hr
               class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto"
               style="width: 60px;"
             />
             <p>
-              <a class="dark-grey-text" href="#!">MDBootstrap</a>
+              <a class="dark-grey-text" href="#!">Sejarah</a>
             </p>
             <p>
-              <a class="dark-grey-text" href="#!">MDWordPress</a>
+              <a class="dark-grey-text" href="#!">Visi & Misi</a>
             </p>
             <p>
-              <a class="dark-grey-text" href="#!">BrandFlow</a>
+              <a class="dark-grey-text" href="#!">Kemitraan</a>
             </p>
             <p>
-              <a class="dark-grey-text" href="#!">Bootstrap Angular</a>
+              <a class="dark-grey-text" href="#!">Annual Report</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -383,22 +352,22 @@
           <!-- Grid column -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
-            <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+            <h6 class="text-uppercase font-weight-bold">Informasi</h6>
             <hr
               class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto"
               style="width: 60px;"
             />
             <p>
-              <a class="dark-grey-text" href="#!">Your Account</a>
+              <a class="dark-grey-text" href="#!">Karier</a>
             </p>
             <p>
-              <a class="dark-grey-text" href="#!">Become an Affiliate</a>
+              <a class="dark-grey-text" href="#!">Pengadaane</a>
             </p>
             <p>
-              <a class="dark-grey-text" href="#!">Shipping Rates</a>
+              <a class="dark-grey-text" href="#!">Peta MRT Jakarta</a>
             </p>
             <p>
-              <a class="dark-grey-text" href="#!">Help</a>
+              <a class="dark-grey-text" href="#!">Cara Gunakan MRT</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -411,10 +380,10 @@
               class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto"
               style="width: 60px;"
             />
-            <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-            <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
-            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+            <p><i class="fas fa-home mr-3"></i> DKI Jakarta, Indonesia</p>
+            <p><i class="fas fa-envelope mr-3"></i> info@mrt.com</p>
+            <p><i class="fas fa-phone mr-3"></i> (+62 21) 390 6454</p>
+            <p><i class="fas fa-print mr-3"></i> (+62 21) 315 5846</p>
           </div>
           <!-- Grid column -->
         </div>

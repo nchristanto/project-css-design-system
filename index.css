@@ -1,3 +1,32 @@
 #navbarTogglerDemo03 {
   padding-left: 30px;
 }
+
+.card {
+  width: 350px;
+}
+
+.card-box-container .text-center {
+  justify-content: left;
+}
+
+.card-box-container .btn-card-box {
+  width: 210px;
+}
+
+.jumbotron {
+  display: flex;
+  flex-direction: row;
+}
+
+.jumbotron-text {
+  padding-left: 80px;
+  padding-right: 50px;
+  /* background-image: url("/images/banner-horizontal.jpg"); */
+  /* background-size: 750px; */
+}
+
+.card-group {
+  margin: 20px;
+  justify-content: space-between;
+}
